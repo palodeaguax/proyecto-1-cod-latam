@@ -3,44 +3,158 @@
 /* Fonts */
 /* Importar aquí la font */
 
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #cccccc;
+    color: black;
+    margin: 0;
+    line-height: 1.2;
+}
+
+img {
+    max-width: 20%;
+}
+
+header {
+    background-color: white;
+    box-sizing: border-box;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header__logo {
+    margin: 1rem;
+    padding: 0px;
+
+}
 
 
+header ul {
+ display: flex;
+ flex-direction: row;
+ padding: 80px;
+ justify-content: center;
+ font-size: 20px;
+
+
+}
+
+header li {
+    margin-right: 20px;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: blue
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+
+section {
+    
+    margin-bottom: 40px;
+}
+
+section h1 {
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    
+}
+
+article p {
+    color:white;
+    background-color: rgb(58, 16, 100);
+    margin: 0%;
+    padding: 15px
+    
+
+}
+
+
+article ul {
+    display: flex;
+    justify-content:space-between;
+    margin: 0%;
+    padding: 80px;
+    box-sizing: border-box;
+}
+
+article li {
+    margin-right: 20px;
+}
+
+footer {
+    background-color: rgb(58, 16, 100);
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    font-size: larger;
+    color: white;
+}
 /* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
 *  cuyos valores asigna por defecto el navegador.
 */
 
 /* Reset */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+ 
+  
     /* Para que el scrolleo en la one page sea suave */
-    scroll-behavior: smooth;
-}
-
+  
 /* Para quitar los puntos a los items de listas */
-ul {
-    list-style: none;
-}
+
 
 /* Para que los enlaces hereden el color de texto y no tengan subrayado */
+
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+
+/* Recomendaciones! 
+*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
+*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
+  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+*main {
+    max-width: 1200px;
+    margin: auto;
+}
+
 a {
     text-decoration: none;
     color: inherit;
 }
 
-/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
-*  el margin: auto; para tenerlo centrado fácilmente ;)
-*/
-main {
-    max-width: 1200px;
-    margin: auto;
+ul {
+    list-style: none;
 }
 
-/* Recomendaciones! 
-*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
-*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
-*
+    scroll-behavior: smooth;
+}
+
 *  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
 *    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
 *
@@ -54,3 +168,10 @@ main {
 *    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
 *    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
 */
+
+/*/
+text-align: center;
+justify-content: center;
+list-style: none;
+margin: 70px;
+padding: 90px;
