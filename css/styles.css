@@ -8,34 +8,26 @@ body {
     background-color: #cccccc;
     color: black;
     margin: 0;
-    line-height: 1.2;
+    box-sizing: border-box;
 }
 
-img {
-    max-width: 20%;
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     background-color: white;
-    box-sizing: border-box;
-    padding: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header__logo {
     margin: 1rem;
     padding: 0px;
-
-}
-
-
-header ul {
- display: flex;
- flex-direction: row;
- padding: 80px;
- justify-content: center;
- font-size: 20px;
-
 
 }
 
@@ -76,22 +68,36 @@ section h1 {
     margin-bottom: 20px;
 }
 
+section input {
+    background-color: rgb(58, 16, 100);
+    color: white;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+} 
+       
+
 section h2 {
     font-size: 32px;
     margin-top: 0;
     margin-bottom: 20px;
+    border-radius: 10px;
     
 }
 
 article p {
     color:white;
     background-color: rgb(58, 16, 100);
-    margin: 0%;
+    display: block;
     padding: 15px
+    
+    
     
 
 }
-
 
 article ul {
     display: flex;
@@ -99,6 +105,7 @@ article ul {
     margin: 0%;
     padding: 80px;
     box-sizing: border-box;
+  
 }
 
 article li {
@@ -135,9 +142,7 @@ footer {
 /* Recomendaciones! 
 *  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
 *    "estilos generales". Una buena idea sería comenzar por el <body> ;)
-  box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+
 *main {
     max-width: 1200px;
     margin: auto;
